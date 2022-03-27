@@ -1,0 +1,34 @@
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file3.txt
+
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-6 (master)
+$ git commit -m"prints value of x,y,z"
+[master 55be22d] prints value of x,y,z
+ 1 file changed, 4 insertions(+)
+ create mode 100644 file3.txt
+g
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-6 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-6 (master)
+$ git log --oneline
+55be22d (HEAD -> master) prints value of x,y,z
+ce1fb1b prints value of x,y
+0a3646d prints value of x
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-6 (master)
+$ git reset --soft ce1fb1b
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-6 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file3.txt
+

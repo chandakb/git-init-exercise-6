@@ -1,0 +1,4 @@
+x,y,z=1,2.1,"abc"
+print(x)
+print(y)
+print(z)
