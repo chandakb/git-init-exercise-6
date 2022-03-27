@@ -1,0 +1,47 @@
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git commit -m"files added to repository"
+[master (root-commit) 9814796] files added to repository
+ 4 files changed, 5 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+ create mode 100644 file4.txt
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ vi file1.txt
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ vi file2.txt
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+        modified:   file2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git stash save "made some changes in file 1 and file 2"
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+Saved working directory and index state On master: made some changes in file 1 and file 2
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+sandeep@sandeep MINGW64 ~/Desktop/git_assignment/exercise-5 (master)
+$ git stash list
+stash@{0}: On master: made some changes in file 1 and fil
